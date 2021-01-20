@@ -1,5 +1,5 @@
 const chalk = require('chalk')
-const { command, describe, demandOption, string } = require('yargs')
+//const { command, describe, demandOption, string } = require('yargs')
 const yargs = require('yargs')
 const notes = require('./notes.js')
 
@@ -37,7 +37,7 @@ yargs.command({
         title : {
             description : 'note title',
             demandOption : true,
-            type : string
+            type : 'string'
         }
     },
     handler(argv){
@@ -53,7 +53,7 @@ yargs.command({
         title : {
             description : 'note title',
             demandOption : true,
-            type : string
+            type : 'string'
         }
     },
     handler(argv){
